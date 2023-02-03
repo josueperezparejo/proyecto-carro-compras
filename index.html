@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto Carro Compras</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Footer -->
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div>
+                <div class="four columns">
+                    <img alt="imagen-logo" src="./assets/img/logo.jpg" id="logo">
+                </div>
+
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img alt="imagen-carrito" src="./assets/img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <div class="contenido-hero">
+                        <h2>Aprende algo nuevo</h2>
+                        <p>Todos los cursos a $15</p>
+                        <form action="#" id="busqueda" method="post" class="formulario">
+                            <input class="u-full-width" type="text" placeholder="¿Que te gustaría Aprender?"
+                                id="buscador">
+                            <input type="submit" id="submit-buscador" class="submit-buscador">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                <div class="four columns icono icono1">
+                    <p>20,000 Cursos en línea <br>
+                        Explora los temas más recientes</p>
+                </div>
+                <div class="four columns icono icono2">
+                    <p>Instructores Expertos <br>
+                        Aprende con distintos estilos</p>
+                </div>
+                <div class="four columns icono icono3">
+                    <p>Acceso de por vida <br>
+                        Aprende a tu ritmo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lista-cursos" class="container">
+        <h1 id="encabezado" class="encabezado">Cursos en Línea</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img alt="imagen-curso" src="./assets/img/curso1.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>HTML5, CSS3, JavaScript para Principiantes</h4>
+                        <p>Josué Peréz</p>
+                        <img alt="imagen-estrellas" src="./assets/img/estrellas.png">
+                        <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img alt="imagen-curso" src="./assets/img/curso2.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Curso de Comida Vegetariana</h4>
+                        <p>Josué Peréz</p>
+                        <img alt="imagen-estrellas" src="./assets/img/estrellas.png">
+                        <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img alt="imagen-curso" src="./assets/img/curso3.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Guitarra para Principiantes</h4>
+                        <p>Josué Peréz</p>
+                        <img alt="imagen-estrellas" src="./assets/img/estrellas.png">
+                        <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img alt="imagen-curso" src="./assets/img/curso4.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Huerto en tu casa</h4>
+                        <p>Josué Peréz</p>
+                        <img alt="imagen-estrellas" src="./assets/img/estrellas.png">
+                        <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img alt="imagen-curso" src="./assets/img/curso5.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Decoración con productos de tu hogar</h4>
+                        <p>Josué Peréz</p>
+                        <img alt="imagen-estrellas" src="./assets/img/estrellas.png">
+                        <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img alt="imagen-curso" src="./assets/img/curso1.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Diseño Web para Principiantes</h4>
+                        <p>Josué Peréz</p>
+                        <img alt="imagen-estrellas" src="./assets/img/estrellas.png">
+                        <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img alt="imagen-curso" src="./assets/img/curso2.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Comida Mexicana para principiantes</h4>
+                        <p>Josué Peréz</p>
+                        <img alt="imagen-estrellas" src="./assets/img/estrellas.png">
+                        <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img alt="imagen-curso" src="./assets/img/curso3.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Estudio Musical en tu casa</h4>
+                        <p>Josué Peréz</p>
+                        <img alt="imagen-estrellas" src="./assets/img/estrellas.png">
+                        <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img alt="imagen-curso" src="./assets/img/curso4.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Cosecha tus propias frutas y verduras</h4>
+                        <p>Josué Peréz</p>
+                        <img alt="imagen-estrellas" src="./assets/img/estrellas.png">
+                        <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar
+                            Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img alt="imagen-curso" src="./assets/img/curso5.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Prepara galletas caseras</h4>
+                        <p>Josué Peréz</p>
+                        <img alt="imagen-estrellas" src="./assets/img/estrellas.png">
+                        <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito"
+                            data-id="10">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img alt="imagen-curso" src="./assets/img/curso1.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>JavaScript Moderno con ES6</h4>
+                        <p>Josué Peréz</p>
+                        <img alt="imagen-estrellas" src="./assets/img/estrellas.png">
+                        <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito"
+                            data-id="11">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img alt="imagen-curso" src="./assets/img/curso2.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>100 Recetas de Comida Natural</h4>
+                        <p>Josué Peréz</p>
+                        <img alt="imagen-estrellas" src="./assets/img/estrellas.png">
+                        <p class="precio">$200 <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito"
+                            data-id="12">Agregar Al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="mb-4 pb-4">
+            <hr class="border border-secondary border-2 opacity-25">
+
+            <h2 class="text-center pt-3">Frontend Developer</h2>
+            <p class="text-center mx-auto col-md-7">Hola, soy <span class="fw-bold text-primary">Josué Pérez. </span>Me
+                especializo
+                en la producción, diseño, planificación y organización de proyectos de desarrollo web. Además, tengo
+                conocimientos en varias <span class="fw-bold text-primary">tecnologías</span> relacionadas.</p>
+            <div class="d-flex justify-content-center">
+                <ul class="col-md-4 nav justify-content-between pb-3 mb-3 gap-1">
+                    <li class="nav-item hvr-float-shadow">
+                        <img loading="lazy" width="40" src="./assets/icons/html-5.png" alt="icon logo png html5">
+                    </li>
+                    <li class="nav-item hvr-float-shadow">
+                        <img loading="lazy" width="40" src="./assets/icons/css-3.png" alt="icon logo png css3">
+                    </li>
+                    <li class="nav-item hvr-float-shadow">
+                        <img loading="lazy" width="40" src="./assets/icons/js.png" alt="icon logo png javascript">
+                    </li>
+                    <li class="nav-item hvr-float-shadow">
+                        <img loading="lazy" width="40" src="./assets/icons/git.png" alt="icon logo png git">
+                    </li>
+                    <li class="nav-item hvr-float-shadow">
+                        <img loading="lazy" width="40" src="./assets/icons/nodo-js.png" alt="icon logo png nodo">
+                    </li>
+                    <li class="nav-item hvr-float-shadow">
+                        <img loading="lazy" width="40" src="./assets/icons/react-js.png" alt="icon logo png react">
+                    </li>
+                    <li class="nav-item hvr-float-shadow">
+                        <img loading="lazy" width="40" src="./assets/icons/bootstrap.png" alt="icon logo png bootstrap">
+                    </li>
+                </ul>
+            </div>
+
+            <p class="text-center">Pueden conocer mis proyectos en mi perfil de GitHub, LinkedIn y Twitch.</p>
+            <ul class="nav justify-content-center list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-muted hvr-icon-fade-git" target="_blank" href="https://github.com/josueperezparejo">
+                        <i class="fa-2xl fa-brands fa-github hvr-icon-git"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted hvr-icon-fade-linkedin" target="_blank"
+                        href="https://www.linkedin.com/in/josue-david-perez-parejo-769983161">
+                        <i class="fa-2xl fa-brands fa-linkedin-in hvr-icon-linkedin"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted hvr-icon-fade-twitch" target="_blank" href="https://www.twitch.tv/josuepp1997">
+                        <i class="fa-2xl fa-brands fa-twitch hvr-icon-twitch"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/fc1e83c263.js" crossorigin="anonymous"></script>s
+
+</body>
+
+</html>
